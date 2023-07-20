@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>chatgpt demo</title>
+
+</head>
+
+<body>
+    <h1>ChatGPT API</h1>
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <div id="chat-input">
+            <input type="text" id="prompt-input" placeholder="在这里输入你的消息" />
+            <button id="send-message">发送</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        #chat-container {
+            width: 800px;
+            height: 800px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #chat-messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: scroll;
+        }
+
+        #chat-messages p {
+            margin: 5px 0;
+        }
+
+        #chat-input {
+            display: flex;
+            padding: 10px;
+        }
+
+        #chat-input input {
+            flex: 1;
+            margin-right: 10px;
+        }
+    </style>
+</body>
+
+</html>
